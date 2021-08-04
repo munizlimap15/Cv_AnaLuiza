@@ -1,0 +1,159 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.1, 21 November 2016) written by
+% LianTze Lim (liantze@gmail.com), based on the 
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+% 
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you want to use \orcid or the
+%% academicons icons, add "academicons"
+%% to the \documentclass options. 
+%% Then compile with XeLaTeX or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+\documentclass[10pt,a4paper]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages. 
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%% When using the "academicons" option,
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you may need to install
+%% Academicons.ttf in your operating system's font %% folder.
+
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1cm,bottom=1cm}
+
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+\usepackage{hyperref}
+
+
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Ana Luiza Muniz Lima}
+\tagline{Geophysics Master Student}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{\href{mailto:anamuniz@id.uff.br}{anamuniz@id.uff.br}}
+%   \phone{+49-173-6895039}
+  %\mailaddress{Address: Santa Rosa, Niterói}
+  \location{Niterói-Rio de Janeiro, Brazil}
+  \linkedin{\href{http://www.linkedin.com/in/analuizamunizlima}{linkedin.com/in/analuizamunizlima}}
+  \phone{+55 21992564421}
+ 
+%   \github{github.com/mmayer} % I'm just making this up though.
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+}
+
+%% Make the header extend all the way to the right, if you want. Extend the right margin by 8cm (=6.8cm marginparwidth + 1.2cm marginparsep)
+\begin{adjustwidth}{}{-8cm}
+\makecvheader
+\end{adjustwidth}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[page1sidebar]{Experience}
+
+\cvevent{Member of Dimensional and Computational Metrology Laboratory - LMDC }{Fluminense Federal University}{October 2019- currently}{ Niterói, Brazil}
+\begin{itemize}
+%\item Development of methodologies and research that help assess the risks of a geotechnical project
+\item Methodology development and research aiming to assess the risks of geotechnical projects
+\item Analyze geological, seismic and geotechnical data
+\item Data manipulation and statistical analyzes
+\item Quality control and team participation in the development of software for generating and managing geophysical 
+and geotechnical data  
+\end{itemize}
+\divider
+\cvevent{Researcher – Geological Survey of Brasil - CPRM }{PROERG GAS II 
+}{September 2020- November 2020}{ Elevation of Rio Grande, Brazil}
+\begin{itemize}
+\item Participation in the scientific committee PROERG GAS II  
+\item 6 weeks expedition aboard the Hydro-Oceanographic Research Vessel (NPqHo) - Vital de Oliveira - Brazilian Navy
+\item Experience in acquisition and geophysical data analysis: multibeam, high resolution (SBP) and magnetometry
+\item Analysis of XSV, XBT, MVP, and ACDP 150kHz, and other Oceanographic data
+\item POI identification
+\item Report(s) preparation
+\end{itemize}
+
+\divider
+\cvevent {Owner of a scholarship in Scientific Research and Internship as Undergraduate Student}{National Observatory of Rio de Janeiro}{July 2017 – November 2018}{Rio de Janeiro}
+\begin{itemize}
+\item Experience on Cyclostratigraphy and Paleoclimate to investigate the record of quasi-periodicities on a millenary scale in data serie 
+\end{itemize}
+
+\cvsection{Education}
+
+\cvevent{Master Degree in  Geophysics }{Ocean and Earth Dynamics }{February 2019- currently}{ Fluminense Federal University, Brazil}
+\begin{itemize}
+    \item Working title: Analysis of the correlation between seismic attributes and geotechnical parameters of marine sediments
+\end{itemize}
+
+\divider
+\cvevent{Bachelor in Geophysics}{Fluminense Federal University }{2014- 2019} {Niterói, Brazil}
+\begin{itemize}
+    \item Thesis: “Assessment of physical attributes of the Northwest Australian Shelf sediments” translated from the 
+Portuguese: “Avaliação de atributos físicos dos sedimentos da Plataforma Noroeste Australiana”.
+\end{itemize}
+
+
+% \divider
+
+% \cvevent{Product Engineer}{Google}{23 June 1999 -- 2001}{Palo Alto, CA}
+
+% \begin{itemize}
+% \item Joined the company as employe \#20 and female employee \#1
+% \item Developed targeted advertisement in order to use user's search queries and show them related ads
+% \end{itemize}
+
+%\cvsection{A Work Day of My Life}
+
+% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
+% \wheelchart{outer radius}{inner radius}{
+% comma-separated list of value/text width/color/detail}
+%\wheelchart{1.5cm}{0.5cm}{%
+ % 10/13em/accent!30/Business Planning and Strategy implementation, 
+  %25/9em/accent!60/Resolving issues with project teams \& %stakeholders,
+  %5/12em/accent!10/Budget Management, 
+  %20/12em/accent!40/Stakeholder Management,
+  %5/8em/accent!20/In-House Business development,
+  %30/9em/accent/Leading and motivating project members that their work has meaning,
+  %5/8em/accent!20/Networking}
+
+\clearpage
+
+
+\end{document}
